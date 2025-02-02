@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f8fa;
+        color: #333;
+    }
+
+    .header {
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #4A90E2;
+    }
+
+    .nav .btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .nav .cart-btn {
+        margin-left: 10px;
+    }
+
+    .main {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .add-product-section {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .add-product-section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .add-product-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .add-product-form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .add-product-form input,
+    .add-product-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .add-product-form input[type="file"] {
+        padding: 5px;
+    }
+
+    .add-product-form .form-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .add-product-form .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .add-product-form .cancel-btn {
+        background-color: #ccc;
+        color: #333;
+    }
+
+    .add-product-form .submit-btn {
+        background-color: #4A90E2;
+        color: #fff;
+    }
+
+</style>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="logo">ShopManager</h1>
+        <nav class="nav">
+            <button class="btn">Add Product</button>
+            <button class="btn cart-btn">🛒</button>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="add-product-section">
+        <h2>Add New Product</h2>
+        <form class="add-product-form">
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" placeholder="Enter product name" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" id="price" placeholder="Enter price" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Enter product description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Upload Image</label>
+                <input type="file" id="image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" placeholder="Enter quantity" required>
+            </div>
+            <div class="form-actions">
+                <button type="reset" class="btn cancel-btn">Cancel</button>
+                <button type="submit" class="btn submit-btn">Add Product</button>
+            </div>
+        </form>
+    </section>
+</main>
+</body>
+</html>

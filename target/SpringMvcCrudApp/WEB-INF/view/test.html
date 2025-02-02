@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopManager - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    /* Header Styles */
+    .header {
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .nav .btn {
+        margin-left: 10px;
+    }
+
+    /* Main Styles */
+    .main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    .products h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .products .add-new {
+        margin-bottom: 20px;
+    }
+
+    .product-list {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .product-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 1.2rem;
+        color: #28a745;
+        margin: 10px 0;
+    }
+
+    .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
+
+    .details-btn {
+        background: #6c757d;
+        color: #fff;
+    }
+
+    .edit-btn {
+        background: #ffc107;
+        color: #fff;
+    }
+
+    .delete-btn {
+        background: #dc3545;
+        color: #fff;
+    }
+
+    .cart-btn {
+        background: #007bff;
+        color: #fff;
+    }
+
+    .add-new {
+        background: #007bff;
+        color: #fff;
+    }
+    /* Button Styles */
+    .btn {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    /* Hover Effects */
+    .btn:hover {
+        transform: scale(1.05); /* Slightly enlarge button */
+        opacity: 0.9;          /* Dim the button slightly */
+    }
+
+    .details-btn:hover {
+        background: #5a6268; /* Darker shade for hover */
+    }
+
+    .edit-btn:hover {
+        background: #e0a800; /* Darker yellow for hover */
+    }
+
+    .delete-btn:hover {
+        background: #c82333; /* Darker red for hover */
+    }
+
+    .cart-btn:hover {
+        background: #0056b3; /* Darker blue for hover */
+    }
+
+    .add-new:hover {
+        background: #0056b3; /* Darker blue for hover */
+    }
+
+
+</style>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="logo">ShopManager</h1>
+        <nav class="nav">
+            <button class="btn">Add Product</button>
+            <button class="btn cart-btn">🛒</button>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="products">
+        <h2>Products</h2>
+        <a href="details.html" class="btn details-btn">👁️ Details</a>
+        <button href="product.html" class="btn add-new">Add New Product</button>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="milk.jpg" alt="Fresh Milk" class="product-img">
+                <h3>Fresh Milk</h3>
+                <p class="price">$3.99</p>
+                <p>Farm-fresh whole milk, perfect for your daily needs</p>
+                <div class="actions">
+                    <a href="details.html" class="btn details-btn">👁️ Details</a>
+                    <button class="btn edit-btn">✏️ Edit</button>
+                    <button class="btn delete-btn">❌ Delete</button>
+                    <button class="btn cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="fish.jpg" alt="Fresh Fish" class="product-img">
+                <h3>Fresh Fish</h3>
+                <p class="price">$12.99</p>
+                <p>Wild-caught salmon, perfect for a healthy meal</p>
+                <div class="actions">
+                    <a href="details.html" class="btn details-btn">👁️ Details</a>
+                    <button class="btn edit-btn">✏️ Edit</button>
+                    <button class="btn delete-btn">❌ Delete</button>
+                    <button class="btn cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="cheese.jpg" alt="Aged Cheese" class="product-img">
+                <h3>Aged Cheese</h3>
+                <p class="price">$8.99</p>
+                <p>Premium aged cheddar cheese</p>
+                <div class="actions">
+                    <a href="details.html" class="btn details-btn">👁️ Details</a>
+                    <button class="btn edit-btn">✏️ Edit</button>
+                    <button class="btn delete-btn">❌ Delete</button>
+                    <button class="btn cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

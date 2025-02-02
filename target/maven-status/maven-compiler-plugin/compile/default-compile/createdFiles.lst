@@ -1,0 +1,8 @@
+com\crudApp\model\ProductDetails.class
+com\crudApp\service\ProductServiceImpl.class
+com\crudApp\dao\ProductDAOImpl.class
+com\crudApp\model\Product.class
+com\crudApp\controller\ProductController.class
+com\crudApp\dao\ProductDAO.class
+com\crudApp\Main.class
+com\crudApp\service\ProductService.class
