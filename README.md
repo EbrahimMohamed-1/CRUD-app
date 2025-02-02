@@ -43,7 +43,8 @@ Before you begin, ensure you have met the following requirements:
 2. **Set Up MySQL Database with Docker**:
    - Start a MySQL container using Docker:
      ```bash
-     docker container run -d --name mysqldatabase -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root mysql:latest
+     docker container run -d --name mysqldatabase -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root
+      mysql:latest
       ```
 3. **Build the Project**:
    - Use Maven to build the project:
